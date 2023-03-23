@@ -1,0 +1,51 @@
+* {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  background-color: bisque;
+  min-height: 100vh;
+  display: flex;
+  gap: 0px 15px;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item{
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  border: 2px solid steelblue;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+row-gap                PARA QUANDO EXISTIR flex-direction = column
+column-gap             PARA QUANDO NÃO EXISTIR flex-direction
+gap                    PARA USAR AS DUAS OPÇÕES, ESQUERDA = GAP VERTICAL, DIREITA = GAP HORIZONTAL
+
+justify-content         Centraliza na horizontal
+As 3 primeiras propriedades são start, center e end, para centralizações “fixas” horizontalmente.
+space-around            Espaçamento da esquerda fica igual espaçamento da direita
+space-between           Irá colocar os elementos nas extremidades, afastados um do outro
+space-evenly            Espaçamento igual entre todos, porém não leva em consideração espaçamento das extremidades
+
+align-items             Centraliza na vertical
+As 3 primeiras propriedades são flex-start, center e flex-end, para centralizações “fixas” vesticalmente.
+stretch                 Estica verticalmente, porém é necessário remover largura/altura do elemento
+
+flex-wrap               Quebra de linha com flexbox
+wrap                    Com o wrap nós conseguimos fazer com que os itens quebrem quando não tiverem mais espaço
+nowrap                  Irá achatar o elemento
+wrap-reverse            Faz a mesma coisa que o wrap, só que reverso
+
+
+
+*/

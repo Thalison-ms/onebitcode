@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  background-color: darkgray;
+  min-height: 100vh;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+
+}
+.item{
+  height: 200px;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 200px;      /*AJUDA A REALIZAR A QUEBRA DO ELEMENTO*/
+  flex-grow: 1;
+}
+.item1{
+  flex-shrink: 2;
+}
+
+/*
+flex-basis é como se fosse o width, a diferença entre ele é minima, 
+porém o correto é utilizar o basis já que é uma boa prática utilizar
+essa funcionalidade quando está atuando com flex. É uma largura no
+formato flex.
+
+flex-grow é uma forma que temos de aumentar o tamanho dos itens
+sem fazer que eles quebrem de forma imediata, usando flex-grow os itens
+passam a ser mais flexiveis, se adaptando a tela e realizando
+quebras inteligentes, caso seja encurtado, será encurtado no máximo
+definido pelo flex-basis.
+
+flex-shrink está ligado a diminuição dos itens. Ou seja, se aplicado
+em algum item/elemento, quando o limite do flex-basis for
+comprometido, esse item/elemento com shrink irá diminuir consideravelmente
+se comparado aos outros, porém ele não pode ser utilizado com wrap
+valor 0 faz com que esse elemento opere no max do basis, somente os outros elementos vão diminuir
+valor 1 é o valor padrão, faz com que os elementos diminuam na mesma proporção
+valor 2 faz com que o elemento diminua primeiro em relação aos outros
+
+
+*/

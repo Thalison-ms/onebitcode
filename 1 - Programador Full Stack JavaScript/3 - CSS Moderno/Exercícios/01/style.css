@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+header{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+.logo1{
+  width: 40px;
+}
+.logo2{
+  width: 200px;
+}
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+.buttonHeader{
+  color: white;
+  border: 1px solid white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.buttonHeader:hover{
+  border-color: red;
+}

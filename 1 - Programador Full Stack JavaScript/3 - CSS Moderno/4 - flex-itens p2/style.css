@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: darkgray;
+  min-height: 100vh;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item {
+  width: 100%;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item1{
+  order: 2;
+}
+.item2{
+  flex: 1 0 auto;
+  order: 3;
+}
+.item3{
+  order: 1;
+}
+
+/*
+Nesse exemplo não iremos usar flex-basis, pois o mesmo não funciona
+bem com o modo coluna.
+flex - (Grow, shrink, basis.), serve para aplicar as 
+3 propriedades de uma vez.
+order - com ele podemos definir a ordem de cada item
+*/
