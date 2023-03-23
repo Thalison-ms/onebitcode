@@ -1,0 +1,67 @@
+/*==================================================================================
+SELETOR ESTRELA - APLICA EM TODO CÓDIGO HTML*/
+* {
+    box-sizing: border-box;
+}
+/*==================================================================================
+SELETOR COM DESCENDÊNCIA, OU SEJA, TODOS OS A DENTRO DE LI VÃO FICAR VERMELHOS*/
+li a{
+    color: red;
+}
+/*==================================================================================
+SELETOR FILHO, PARECIDO COM DESCENDÊNCIA, PORÉM AQUI FICA RESTRITO, SOMENTE FILHOS DIRETOS DE LI*/
+li > a{
+    color: blueviolet;
+}
+/*==================================================================================
+SELETOR IRMÃO, PARECIDO COM ADJACENTE, PORÉM ELE IRÁ PEGAR TODOS QUE ESTIVER APÓS O ELEMENTO MENCIONADO*/
+li ~ p{
+    color: yellow;
+}
+/*==================================================================================
+SELETOR CONTIDO, O * DESIGNA QUE O VALOR UTILIZADO DEVE APARECER EM ALGUM LUGAR*/
+a[href*="tuts"] {
+    color: #1f6053; 
+    }
+/*==================================================================================
+SELETOR INICIA COM, O ^ IRÁ SELECIONAR TODOS ELEMENTOS QUE COMEÇAREM COM O VALOR UTILIZADO*/
+a[href^="http"] {
+    background: url(path/to/external/icon.png) no-repeat;
+    padding-left: 10px;
+   }
+/*==================================================================================
+SELETOR TERMINA COM, O $ IRÁ SELECIONAR TODOS ELEMENTOS QUE TERMINAM COM O VALOR UTILIZADO*/
+a[href$=".jpg"] {
+    color: red;
+   }
+/*==================================================================================
+SELETOR ADJACENTE, EX: QUERO ADICIONAR O ESTILO A TODO H4 QUE VEM DEPOIS DE H1, CASO EXISTA ALGUMA INFORMAÇÃO ENTRE H1 E H4, ESTILO N FUNCIONA*/
+h1 + h4{
+    border: 4px solid steelblue;
+}
+/*==================================================================================
+SELETOR DE ATRIBUTO, DA A POSSIBILIDADE DE FILTRAR UMA TAG POR ATRIBUTO*/
+a[href='/recibo2']{
+    font-size: 30px;
+}
+/*==================================================================================
+PSEUDO-CLASS, SELETOR QUE PERMITE SELECIONAR UM ELEMENTO ESPECÍFICO*/
+li:nth-of-type(2){
+    font-size: 10px;
+}
+/*==================================================================================
+SELETOR FILETYPE
+<a href="path/to/image.jpg" data-filetype="image"> Link para Imagem</a>*/
+a[data-filetype="image"] {
+    color: red;
+   }
+/*==================================================================================
+SELETOR DATA-INFO
+<a href="path/to/image.jpg" data-info="external image"> Clique em mim </a>
+*/
+a[data-info~="external"] {
+    color: red;
+   }
+a[data-info~="image"] {
+    border: 1px solid black;
+}

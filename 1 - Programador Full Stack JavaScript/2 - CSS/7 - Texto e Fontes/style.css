@@ -1,0 +1,18 @@
+body{
+    font-family: Roboto, Arial;
+    font-size: 20px;
+}
+p{
+    line-height: 5.5;
+}
+p span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+}
+div p{
+    font-family: Geostar, cursive;
+    line-height: initial;
+}
