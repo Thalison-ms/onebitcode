@@ -1,0 +1,12 @@
+body {
+  background: black;
+}
+h1 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
